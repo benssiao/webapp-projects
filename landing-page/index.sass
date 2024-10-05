@@ -1,0 +1,88 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    & .topStrip {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+
+        &__logo {
+            flex: 1;
+        }
+
+        &__emptyMiddle {
+            flex: 1;
+            width: 100px;
+            background-color: green;
+        }
+
+        &__links {
+            flex: 1;
+        }
+    }
+
+    & .landingPage {
+        flex: 1;
+
+    }
+
+    & .informationCards {
+        flex: 1;
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: 4;
+        &__explain {
+            grid-row: 1;
+            grid-column: 1/5
+        }
+        &__card1 {
+            &__card {
+                height: 30px;
+                width: 20px;
+                border: 1px solid blue;
+            }
+
+        }
+        &__card2 {
+            &__card {
+                height: 30px;
+                width: 20px;
+                border: 1px solid blue;
+            }
+            
+        }
+        &__card3 {
+            &__card {
+                background-color: black;
+                height: 30px;
+                width: 20px;
+                border: 1px solid blue;
+            }
+            
+        }
+        &__card4 {
+            &__card {
+                height: 30px;
+                width: 20px;
+                border: 1px solid blue;
+            }
+            
+        }
+    }
+
+    & .tackyQuote {
+        flex: 1;
+
+    }
+
+    & .signUpButton {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+
