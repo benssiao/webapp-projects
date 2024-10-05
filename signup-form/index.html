@@ -18,14 +18,14 @@
         <![endif]-->
         
         <div class="background-picture-wrapper">
-        <img src="halie-west-25xggax4bSA-unsplash.jpg" class="background-picture" alt="Beautiful green plants.">
-        <div class="background-picture-attribution">
-            Photo by 
-            <a class="background-picture-author" href="https://unsplash.com/@haliewestphoto">Halie West</a>
-            on 
-            <a class="background-picture-imglink" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
-            .
-        </div>
+            <img src="halie-west-25xggax4bSA-unsplash.jpg" class="background-picture" alt="Beautiful green plants.">
+            <div class="background-picture-attribution">
+                Photo by 
+                <a class="background-picture-author" href="https://unsplash.com/@haliewestphoto">Halie West</a>
+                on 
+                <a class="background-picture-imglink" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+                .
+            </div>
         </div>
         
         <div class="signup">
@@ -33,15 +33,43 @@
                 This is not a real online service! You know you need something like
                 this in your life to help you realize your deepest dreams. 
                 Sign up now!
+                <p> You know you want to.</p>
             </header>
-            <div class="signup-login">
-                <input >
-
-            </div>
-            <div class="signup-createaccount">
-
-            </div>
-
+            <form class="signup-login">
+                <fieldset class="inputs">
+                    <p class="my-legend">Let's do this!</p>
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div> 
+                    <div>
+                        <label for="last_name"> LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="phone_enumber">PHONE NUMBER</label>
+                        <input type="tel" id="phone_number" name="phone_number">
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div>
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="text" id="confirm_password" name="confirm_password">
+                    </div> 
+                </fieldset>
+            </form>
+        
+        <div class="bottom-button">
+            <button class="submit-button" type="submit">Create Account</button>
+            <p>Already have an account? <a href="google.com">Log in</a>.</p>
+           
+        </div>
         </div>
     </body>
 </html>
