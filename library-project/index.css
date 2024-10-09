@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Library-font";
+    src: url(./assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Library-font",Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/textured-paper.png);
+    background-color: #ffe682;
+}
+
+div.centre {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1px;
+    justify-content: space-evenly;
+    width: 15%;
+    height: 100%;
+    
+}
+.centre__logo {
+    background-color: rgb(234,224,213);
+}
+.bookSubmit {
+    overflow: scroll;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234,224,213);
+    padding: 5%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.bookSubmit > p {
+    font-family: Arial, Helvetica, sans-serif, "Library-font";
+}
+.bookSubmit div {
+    padding: 0.5em;
+}
+
+.bookSubmit button {
+    width: 5em;
+}
+
+.bookSubmit p {
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+.centre label {
+    display: block;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.displayArea {
+    display: grid;
+    grid-template-columns: repeat(4, 15%);
+    gap: 7em;
+    height: 100%;
+    width: 85%;
+  
+}
+
+.radios input {
+    display: inline-block;
+}
+.radios label {
+    display: inline;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: inline-block;
+    width: 17em;
+    height: 23em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card::before {
+    content: "close";
+    background-color: black;
+ 
+  }
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .cardTitle {
+    height: 25%;
+    width: 89%;
+  }
+  .container {
+    display: inline-block;
+    background-color: grey;
+    width: 89%;
+    height: 65%;
+    border: 1px solid black;
+  }
+  
